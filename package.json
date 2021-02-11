@@ -1,0 +1,16 @@
+{
+  "name": "romanToDecimal",
+  "version": "1.0.0",
+  "description": "A Roman number to decimal number converter",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "Lucas Guilherme",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^8.3.0"
+  }
+}
