@@ -1,3 +1,8 @@
+/**
+ * Takes in a roman numeral string, returns a number integer [1-3999]
+ * @param {string} symbols 
+ * @return {number}
+*/
 function romanToDecimal(symbols) {
   const romanNumbers = {
     'I': 1,
