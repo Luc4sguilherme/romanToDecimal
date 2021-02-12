@@ -2,11 +2,11 @@ let { expect } = require("chai");
 let converter = require("../src/index");
 
 describe("Convert from Roman to Decimal", function() {
-  it("Argument empty", function() {
-    expect(() => converter.romanToDecimal()).to.throw(Error, 'Argument empty!');
+  it("Empty argument", function() {
+    expect(() => converter.romanToDecimal()).to.throw(Error, 'Empty argument!');
   });
-  it("Argument is an empty string", function() {
-    expect(() => converter.romanToDecimal("")).to.throw(Error, 'Argument empty!');
+  it("The argument is an empty string", function() {
+    expect(() => converter.romanToDecimal("")).to.throw(Error, 'Empty argument!');
   });
   it("Convert CMXCRX (contains invalid character) to decimal", function() {
     expect(() => converter.romanToDecimal("CMXCRX")).to.throw(Error, 'Invalid roman number!');

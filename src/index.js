@@ -12,7 +12,7 @@ function romanToDecimal(symbols) {
   let number = 0
 
   if(symbols === undefined || symbols.length == 0) {
-    throw new Error('Argument empty!')
+    throw new Error('Empty argument!')
   }
 
   symbols = symbols.toUpperCase()
